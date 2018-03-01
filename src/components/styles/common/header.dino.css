@@ -1,0 +1,15 @@
+.header {
+    background-color: gold;
+}
+
+.header ul {
+    margin: 0 0;
+}
+
+.button {
+    padding-right: 10px;
+}
+
+.headerParagraph {
+    margin: 0;
+}

@@ -1,0 +1,19 @@
+.loginPage {
+  background-image: url("../../../images/patt.png");
+  background-size: cover;
+      height: 97vh;
+
+}
+
+.loginPage h1 {
+  text-align: center;
+  color: black;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: white;
+  width: 50%;
+  opacity: 0.9;
+}
