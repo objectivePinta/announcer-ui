@@ -17,7 +17,7 @@ import webpackHotMiddleware from 'webpack-hot-middleware';
 
 /* eslint-disable no-console */
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 const app = express();
 const compiler = webpack(config);
 const loginUri = process.env.LOGIN_URI || '/login';
@@ -31,7 +31,7 @@ const timeout = process.env.TIMEOUT || 10000;
 const logoutUri = process.env.LOGOUT_URI || '/logout';
 const baseUri = process.env.BASE_URI || '/';
 const apiUri = process.env.API_URI || '/api';
-const apiUrl = 'https://announcer-backend.herokuapp.com';
+const apiUrl = 'https://announcer-backend.herokuapp.com/';
 
 const cookieSecret = process.env.COOKIE_SECRET || 'secret';
 const cookieMaxAge = process.env.COOKIE_MAX_AGE || 15 * 60000;
@@ -252,4 +252,8 @@ app.listen(port, (error) => {
     if (error) {
         process.stderr.write(error);
     }
+});
+
+app.listen(port, function() {
+    console.log("App is running on port " + port);
 });
