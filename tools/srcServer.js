@@ -31,7 +31,7 @@ const timeout = process.env.TIMEOUT || 10000;
 const logoutUri = process.env.LOGOUT_URI || '/logout';
 const baseUri = process.env.BASE_URI || '/';
 const apiUri = process.env.API_URI || '/api';
-const apiUrl = process.env.API_URL || 'http://localhost:8080';
+const apiUrl = 'https://announcer-backend.herokuapp.com';
 
 const cookieSecret = process.env.COOKIE_SECRET || 'secret';
 const cookieMaxAge = process.env.COOKIE_MAX_AGE || 15 * 60000;
